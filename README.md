@@ -35,7 +35,7 @@ Instructions coming soon. Stay tuned!
 
 We use [pre-commit](https://pre-commit.com/) to maintain code quality and consistency.
 Pre-commit is a tool that runs automated checks called hooks before each commit.
-These hooks are defined in the `.pre-commit-config.yaml` file and can include linting, formatting, and security scans.
+These hooks are defined in the [.pre-commit-config.yaml](.pre-commit-config.yaml) file and can include linting, formatting, and security scans.
 
 ### Installation<a name="installation"></a>
 
