@@ -1,16 +1,22 @@
-## Hi there 👋
+# My Money Way
 
-<!--
-**mymoneyway/mymoneyway** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**MyMoneyWay** is a personal finance platform managed using a **monorepo** structure.
 
-Here are some ideas to get you started:
+## What is a Monorepo?
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+A *monorepo* (monolithic repository) is a single code repository that contains multiple projects or services. This approach helps in:
+
+- Sharing code easily between modules
+- Consistent tooling and configuration
+- Simplified dependency management
+- Easier cross-project changes
+- Unified CI/CD pipelines
+
+## Structure
+
+This repository includes multiple related services and apps under one roof:
+
+
+## Getting Started
+
+Instructions coming soon. Stay tuned!
