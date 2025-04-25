@@ -16,7 +16,6 @@ A *monorepo* (monolithic repository) is a single code repository that contains m
 
 This repository includes multiple related services and apps under one roof:
 
-
 ## Getting Started
 
 Instructions coming soon. Stay tuned!
