@@ -27,6 +27,8 @@ A *monorepo* (monolithic repository) is a single code repository that contains m
 
 This repository includes multiple related services and apps under one roof:
 
+- [youtube-channel-chatbot](youtube-channel-chatbot) - Conversational chatbot that answers questions from YouTube channels with smart, multi-author responses and video timecodes.
+
 ## Getting Started<a name="getting-started"></a>
 
 Instructions coming soon. Stay tuned!
