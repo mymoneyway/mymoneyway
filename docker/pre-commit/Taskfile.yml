@@ -1,0 +1,17 @@
+version: '3'
+tasks:
+  default:
+    desc: |
+      Runs all configured pre-commit hooks across the entire repository, not just changed files.
+      Useful for performing a full codebase check for issues.
+    cmd: pre-commit run --all-files
+  install:
+    desc: |
+      This sets up a Git hook that automatically runs checks before each commit
+    cmds:
+      - pip install pre-commit
+      - pre-commit install
+  autoupdate:
+    desc: |
+      Updates all hooks in the `.pre-commit-config.yaml` file to their latest revisions.
+    cmd: pre-commit autoupdate

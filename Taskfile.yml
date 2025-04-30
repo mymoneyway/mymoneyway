@@ -1,16 +1,11 @@
 version: '3'
+includes:
+  pre-commit:
+    dir: ./docker/pre-commit
+    taskfile: ./docker/pre-commit
 tasks:
   default:
     aliases: ["help"]
     silent: true
     desc: "Print help"
     cmd: task --list
-  pre-commit:
-    desc: |
-      Runs all configured pre-commit hooks across the entire repository, not just changed files.
-      Useful for performing a full codebase check for issues.
-    cmd: pre-commit run --all-files
-  pre-commit:autoupdate:
-    desc: |
-      Updates all hooks in the `.pre-commit-config.yaml` file to their latest revisions.
-    cmd: pre-commit autoupdate

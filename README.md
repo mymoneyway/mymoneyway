@@ -44,8 +44,7 @@ These hooks are defined in the [.pre-commit-config.yaml](.pre-commit-config.yaml
 This sets up a Git hook that automatically runs checks before each commit. If any check fails, the commit is blocked until the issue is fixed.
 
 ```bash
-pip install pre-commit
-pre-commit install
+task pre-commit:install
 ```
 
 ### Running Pre-Commit Manually<a name="running-pre-commit-manually"></a>
@@ -53,7 +52,7 @@ pre-commit install
 You can run all configured hooks on every file in the repository (not just the ones you've staged) using:
 
 ```bash
-pre-commit run --all-files
+task pre-commit
 ```
 
 This is especially useful when:
