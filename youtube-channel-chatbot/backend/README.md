@@ -40,7 +40,7 @@ sequenceDiagram
     participant scraper as Scraper
     participant youtube as YouTube
 
-    
+
     scraper ->> youtube: Fetch video metadata and subtitles
     activate scraper
         scraper ->> vector_db: Store video metadata
