@@ -7,6 +7,7 @@ This project powers the chatbot backend by serving an API that answers questions
 - [Features](#features)
 - [Memory Bank](#memory-bank)
 - [Setup](#setup)
+- [System Architecture](#system-architecture)
 
 <!-- mdformat-toc end -->
 
@@ -29,3 +30,22 @@ This project powers the chatbot backend by serving an API that answers questions
 ## Setup<a name="setup"></a>
 
 Instructions coming soon.
+
+## System Architecture<a name="system-architecture"></a>
+
+```mermaid
+sequenceDiagram
+    participant vector_db as DynamoDB
+    participant llm as LLM
+    participant scraper as Scraper
+    participant youtube as YouTube
+
+
+    scraper ->> youtube: Fetch video metadata and subtitles
+    activate scraper
+        scraper ->> vector_db: Store video metadata
+        scraper ->> llm: Generate embeddings (if missing)
+        scraper ->> vector_db: Store generated embeddings
+    deactivate scraper
+
+```

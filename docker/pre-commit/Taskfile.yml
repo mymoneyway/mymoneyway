@@ -1,0 +1,31 @@
+version: '3'
+vars:
+  PRE_COMMIT_IMAGE_NAME: mmw-pre-commit
+tasks:
+  default:
+    desc: |
+      Runs all configured pre-commit hooks across the entire repository, not just changed files.
+      Useful for performing a full codebase check for issues.
+    cmd: pre-commit run --all-files
+  install:
+    desc: |
+      This sets up a Git hook that automatically runs checks before each commit
+    cmds:
+      - pip install pre-commit
+      - pre-commit install
+  autoupdate:
+    desc: |
+      Updates all hooks in the `.pre-commit-config.yaml` file to their latest revisions.
+    cmd: pre-commit autoupdate
+  docker:build:
+    desc: Build a Docker container to run pre-commit.
+    cmd: |
+      docker build -t {{.PRE_COMMIT_IMAGE_NAME}} .
+  docker:run:
+    desc: Run a 'task pre-commit' inside a pre-commit Docker container.
+    cmd: |
+      docker run --rm -i -v "{{.ROOT_TASKFILE}}/":/mmw {{.PRE_COMMIT_IMAGE_NAME}} sh -c "task pre-commit"
+  docker:sh:
+    desc: Run a shell inside a pre-commit Docker container.
+    cmd: |
+      docker run --rm -it -v "{{.ROOT_TASKFILE}}/":/mmw {{.PRE_COMMIT_IMAGE_NAME}}

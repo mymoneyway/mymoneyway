@@ -1,0 +1,11 @@
+version: '3'
+includes:
+  pre-commit:
+    dir: ./docker/pre-commit
+    taskfile: ./docker/pre-commit
+tasks:
+  default:
+    aliases: ["help"]
+    silent: true
+    desc: "Print help"
+    cmd: task --list

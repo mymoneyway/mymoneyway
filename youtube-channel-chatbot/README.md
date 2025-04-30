@@ -26,7 +26,7 @@ sequenceDiagram
     participant scraper as Scraper
     participant youtube as YouTube
 
-    
+
     scraper ->> youtube: Fetch video metadata and subtitles
     activate scraper
         scraper ->> vector_db: Store video metadata
@@ -34,7 +34,7 @@ sequenceDiagram
         scraper ->> vector_db: Store generated embeddings
     deactivate scraper
 
-    
+
     frontend ->> backend: User sends a chat message
     activate frontend
         activate backend
