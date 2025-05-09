@@ -31,6 +31,7 @@ A *monorepo* (monolithic repository) is a single code repository that contains m
 This repository includes multiple related services and apps under one roof:
 
 - [youtube-channel-chatbot](youtube-channel-chatbot) - Conversational chatbot that answers questions from YouTube channels with smart, multi-author responses and video timecodes.
+- [buy-high-cry-later](buy-high-cry-later) – Interactive investment sim where you compete with AI investors, build your portfolio from random stocks and ETFs, and test long-term strategies on a timeline-driven market.
 
 ## Getting Started<a name="getting-started"></a>
 
