@@ -23,7 +23,7 @@ The player starts by configuring their investment plan:
 
 - **Years to invest** – default: `30`
 - **Salary date** – default: `25`
-- **Monthly savings** – default: `20,000`
+- **Monthly savings** – default: `300`
 
 Click the **Start** button to launch the simulation.
 

@@ -21,7 +21,7 @@ Set your investment plan, watch random stocks unfold over decades, and make toug
 - Set Your Plan (Start Screen):
   - Choose how many years you want to invest (default: 30).
   - Pick your monthly payday (default: 25th).
-  - Set how much you can save each month (default: 20,000).
+  - Set how much you can save each month (default: 300).
   - Hit Start to begin your financial journey.
 - Watch the Market (Main Screen):
   - The game randomly selects 4 stocks from history and builds 2 ETFs.
